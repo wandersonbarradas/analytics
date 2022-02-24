@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: #f8f9ff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.bg-main {
+  background: url("../images/background-top.png") center center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-bottom: 96px;
+  margin-bottom: 38px;
+}
+.bg-main .header-main {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 74px;
+}
+.bg-main .header-main .logo {
+  width: 184px;
+  height: 40px;
+}
+.bg-main .header-main .logo img {
+  width: inherit;
+}
+.bg-main .header-main .mob-in {
+  display: none;
+}
+.bg-main .header-main .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 96px;
+}
+.bg-main .header-main .navbar .logo {
+  display: none;
+}
+.bg-main .header-main .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bg-main .header-main .navbar ul a {
+  text-decoration: none;
+  color: #8794ba;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  transition: all 0.2s ease-out;
+}
+.bg-main .header-main .navbar ul a:hover {
+  color: #fff;
+}
+.bg-main .header-main .navbar .menu-lista {
+  column-gap: 36px;
+}
+.bg-main .header-main .navbar .menu-login {
+  column-gap: 40px;
+}
+.bg-main .header-main .navbar .menu-login .btn-signUp {
+  background: transparent;
+  border: solid 1px #465b95;
+  padding: 10px 53px;
+  border-radius: 68px;
+  transition: all 0.3s ease-out;
+}
+.bg-main .header-main .navbar .menu-login .btn-signUp:hover {
+  background: #ef2a82;
+  border-color: #ef2a82;
+}
+.bg-main .content-main {
+  display: flex;
+}
+.bg-main .content-main .content-text {
+  max-width: 550px;
+  margin-right: 81px;
+  padding-top: 52px;
+}
+.bg-main .content-main .content-text .title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  margin: 0 0 15px 0;
+}
+.bg-main .content-main .content-text .info-text {
+  color: #8794ba;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  margin: 0 0 49px 0;
+}
+.bg-main .content-main .content-text .btn {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  background: #ef2a82;
+  border: 1px solid #ef2a82;
+  padding: 15px 80px;
+  border-radius: 68px;
+}
+.bg-main .content-main .content-text .btn:hover {
+  background: transparent;
+  border-color: #465b95;
+}
+.bg-main .content-main .content-img {
+  max-width: 549px;
+}
+
+.section-features .main-features {
+  text-align: center;
+}
+.section-features .main-features .title {
+  color: #172755;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  margin: 0 0 30px 0;
+}
+.section-features .main-features .text-info {
+  color: #8794ba;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  margin: 0 auto 81px auto;
+  max-width: 1060px;
+}
+.section-features .main-features .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section-features .main-features .box-container .box-item {
+  text-align: center;
+  max-width: 380px;
+  min-width: 335px;
+  padding: 10px;
+}
+.section-features .main-features .box-container .box-item .subtitle {
+  color: #172755;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  margin: 26px 0 15px 0;
+}
+.section-features .section-vatagens {
+  margin: 130px 0 114px 0;
+}
+.section-features .section-vatagens .vantagens-itens {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 120px;
+}
+.section-features .section-vatagens .vantagens-itens:last-child {
+  margin: 0;
+}
+.section-features .section-vatagens .vantagens-itens .item-text h2 {
+  color: #172755;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  margin: 0 0 30px 0;
+}
+.section-features .section-vatagens .vantagens-itens .item-text p {
+  color: #8794ba;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  margin: 0;
+}
+
+.pricing {
+  background: url("../images/background-bottom.png") center center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.pricing .pricing-plans {
+  text-align: center;
+  padding-top: 272px;
+  margin-bottom: 74px;
+}
+.pricing .pricing-plans h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  margin: 0 0 30px 0;
+}
+.pricing .pricing-plans p {
+  color: #8794ba;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  margin: 0 auto;
+  max-width: 630px;
+}
+.pricing .plans-itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+.pricing .plans-itens .item {
+  width: 340px;
+  height: 440px;
+  background: #0f1f4b;
+  border-radius: 30px;
+  padding: 0 30px;
+  text-align: center;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+}
+.pricing .plans-itens .item.focos {
+  background: #fff;
+  box-shadow: 0px 18px 50px -15px #060f28;
+}
+.pricing .plans-itens .item.focos h4 {
+  color: #172755;
+}
+.pricing .plans-itens .item.focos h3 {
+  color: #172755;
+}
+.pricing .plans-itens .item.focos h3::before {
+  background-color: #d3d9e9;
+}
+.pricing .plans-itens .item.focos .cta {
+  background: #ef2a82;
+  border: solid 1px #ef2a82;
+  padding: 15px 80px;
+  border-radius: 68px;
+}
+.pricing .plans-itens .item.focos .cta:hover {
+  background: transparent;
+  border: solid 1px #2a407c;
+  padding: 15px 80px;
+  border-radius: 68px;
+  color: #172755;
+}
+.pricing .plans-itens .item h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 50px 0 10px 0;
+}
+.pricing .plans-itens .item span {
+  color: #8794ba;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  display: block;
+}
+.pricing .plans-itens .item h3 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 70px;
+  margin: 0;
+}
+.pricing .plans-itens .item h3::before {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 1px;
+  background-color: #2a407c;
+  margin: 37px auto 28px auto;
+}
+.pricing .plans-itens .item .cta {
+  display: inline-block;
+  background: transparent;
+  border: solid 1px #2a407c;
+  padding: 15px 80px;
+  border-radius: 68px;
+  text-decoration: none;
+  color: #fff;
+  margin: 40px 0 0 0;
+  background: transparent;
+  border: solid 1px #2a407c;
+  padding: 15px 80px;
+  border-radius: 68px;
+}
+.pricing .plans-itens .item .cta:hover {
+  background: #ef2a82;
+  border: solid 1px #ef2a82;
+  padding: 15px 80px;
+  border-radius: 68px;
+  color: #fff;
+}
+.pricing .footer {
+  display: flex;
+  padding: 63px 0 100px 0;
+  border-top: solid 1px #2a407c;
+  justify-content: space-between;
+  text-align: center;
+}
+.pricing .footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 36px;
+}
+.pricing .footer ul li {
+  display: flex;
+  align-items: center;
+}
+.pricing .footer .menu-lista a {
+  text-decoration: none;
+  color: #8794ba;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  transition: all 0.2s ease-out;
+}
+.pricing .footer .menu-lista a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .section-features .section-vatagens .vantagens-itens img {
+    max-width: 560px;
+  }
+
+  .pricing .plans-itens .item {
+    background: #fff;
+    box-shadow: 0px 18px 50px -15px #060f28;
+  }
+  .pricing .plans-itens .item h4 {
+    color: #172755;
+  }
+  .pricing .plans-itens .item h3 {
+    color: #172755;
+  }
+  .pricing .plans-itens .item h3::before {
+    background-color: #d3d9e9;
+  }
+  .pricing .plans-itens .item .cta {
+    background: #ef2a82;
+    border: solid 1px #ef2a82;
+    padding: 15px 80px;
+    border-radius: 68px;
+  }
+  .pricing .plans-itens .item .cta:hover {
+    background: transparent;
+    border: solid 1px #2a407c;
+    padding: 15px 80px;
+    border-radius: 68px;
+    color: #172755;
+  }
+}
+@media (max-width: 960px) {
+  .bg-main {
+    padding-bottom: 320px;
+  }
+  .bg-main .content-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .bg-main .content-main .content-text {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .bg-main .content-main .content-img {
+    max-width: 100%;
+    text-align: center;
+  }
+  .bg-main .content-main .content-img img {
+    width: 100%;
+  }
+
+  .bg-main .header-main {
+    justify-content: space-between;
+  }
+  .bg-main .header-main .mob {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .bg-main .header-main .mob .mob-in {
+    display: inline-block;
+    text-decoration: none;
+    color: #8794ba;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+    transition: all 0.2s ease-out;
+  }
+  .bg-main .header-main .mob .mob-in:hover {
+    color: #fff;
+  }
+  .bg-main .header-main .mob .icon-mobile {
+    display: block;
+  }
+  .bg-main .header-main .mob .icon-mobile span {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #8794ba;
+    margin: 10px;
+  }
+  .bg-main .header-main .mob .icon-mobile.ativo {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+  .bg-main .header-main .navbar {
+    width: 100vw;
+    height: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #f8f9ff;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.2s ease-out;
+  }
+  .bg-main .header-main .navbar .logo {
+    display: none;
+  }
+  .bg-main .header-main .navbar .menu-lista {
+    display: none;
+  }
+  .bg-main .header-main .navbar .menu-login {
+    display: none;
+  }
+  .bg-main .header-main .navbar.ativo {
+    height: 100vh;
+    padding: 50px 20px 20px 20px;
+  }
+  .bg-main .header-main .navbar.ativo .logo {
+    display: block;
+  }
+  .bg-main .header-main .navbar.ativo .menu-lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 0;
+    gap: 30px;
+  }
+  .bg-main .header-main .navbar.ativo .menu-lista li {
+    width: 100%;
+  }
+  .bg-main .header-main .navbar.ativo .menu-lista a {
+    border: 1px solid #d3d9e9;
+    padding: 20px 20px;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+  .bg-main .header-main .navbar.ativo .menu-lista a:hover {
+    border-color: #ef2a82;
+    color: #8794ba;
+  }
+  .bg-main .header-main .navbar.ativo .menu-login {
+    display: flex;
+    margin-top: 70px;
+  }
+  .bg-main .header-main .navbar.ativo .menu-login a:hover {
+    color: #8794ba;
+  }
+}
+@media (max-width: 875px) {
+  .section-features .section-vatagens .vantagens-itens {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-features .section-vatagens .vantagens-itens:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .section-features .section-vatagens .vantagens-itens img {
+    max-width: 560px;
+  }
+}
+@media (max-width: 700px) {
+  .pricing .plans-itens {
+    gap: 60px;
+  }
+  .pricing .footer .menu-lista {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .pricing .plans-itens {
+    gap: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .section-features .main-features .box-container .box-item {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+  }
+  .section-features .main-features .box-container .box-item .content {
+    text-align: start;
+  }
+
+  .section-features .section-vatagens .vantagens-itens img {
+    max-width: 100%;
+  }
+
+  .pricing .plans-itens {
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

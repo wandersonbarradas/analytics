@@ -1,0 +1,12 @@
+// Fonts do Google
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+//Variaveis
+@import "./variables/colors.scss";
+@import "./variables/fontes.scss";
+
+//Mixin
+@import "./mixin/mixin.scss";
+
+//home
+@import "./pages/home.scss";

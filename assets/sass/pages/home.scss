@@ -1,0 +1,583 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: $neutral-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+//Main
+
+.bg-main {
+  background: url("../images/background-top.png") center center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-bottom: 96px;
+  margin-bottom: 38px;
+
+  .header-main {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 74px;
+
+    .logo {
+      width: 184px;
+      height: 40px;
+      img {
+        width: inherit;
+      }
+    }
+    .mob-in {
+      display: none;
+    }
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 96px;
+
+      .logo {
+        display: none;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          @include text-style($text-secondary, 16px, normal, 19px);
+          transition: all 0.2s ease-out;
+          &:hover {
+            color: $text-color;
+          }
+        }
+      }
+
+      .menu-lista {
+        column-gap: 36px;
+      }
+
+      .menu-login {
+        column-gap: 40px;
+
+        .btn-signUp {
+          @include button(transparent, solid 1px #465b95, 10px 53px, 68px);
+          transition: all 0.3s ease-out;
+          &:hover {
+            background: $secundary-color;
+            border-color: $secundary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .content-main {
+    display: flex;
+
+    .content-text {
+      max-width: 550px;
+      margin-right: 81px;
+      padding-top: 52px;
+
+      .title {
+        @include text-style($text-color, 50px, bold, 60px);
+        margin: 0 0 15px 0;
+      }
+
+      .info-text {
+        @include text-style($text-secondary, 18px, normal, 27px);
+        margin: 0 0 49px 0;
+      }
+
+      .btn {
+        text-decoration: none;
+        color: $text-color;
+        transition: all 0.3s ease-out;
+        @include button(
+          $secundary-color,
+          1px solid $secundary-color,
+          15px 80px,
+          68px
+        );
+        &:hover {
+          background: transparent;
+          border-color: #465b95;
+        }
+      }
+    }
+
+    .content-img {
+      max-width: 549px;
+    }
+  }
+}
+
+.section-features {
+  .main-features {
+    text-align: center;
+
+    .title {
+      @include text-style($text-primary, 40px, bold, 47px);
+      margin: 0 0 30px 0;
+    }
+
+    .text-info {
+      @include text-style($text-secondary, 18px, normal, 27px);
+      margin: 0 auto 81px auto;
+      max-width: 1060px;
+    }
+
+    .box-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .box-item {
+        text-align: center;
+        max-width: 380px;
+        min-width: 335px;
+        padding: 10px;
+
+        .subtitle {
+          @include text-style($text-primary, 16px, bold, 19px);
+          margin: 26px 0 15px 0;
+        }
+      }
+    }
+  }
+
+  .section-vatagens {
+    margin: 130px 0 114px 0;
+    .vantagens-itens {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 120px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      .item-text {
+        h2 {
+          @include text-style($text-primary, 40px, bold, 47px);
+          margin: 0 0 30px 0;
+        }
+        p {
+          @include text-style($text-secondary, 18px, normal, 27px);
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.pricing {
+  background: url("../images/background-bottom.png") center center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  .pricing-plans {
+    text-align: center;
+    padding-top: 272px;
+    margin-bottom: 74px;
+    h2 {
+      @include text-style($text-color, 40px, bold, 47px);
+      margin: 0 0 30px 0;
+    }
+    p {
+      @include text-style($text-secondary, 18px, normal, 27px);
+      margin: 0 auto;
+      max-width: 630px;
+    }
+  }
+  .plans-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 100px;
+    .item {
+      width: 340px;
+      height: 440px;
+      background: #0f1f4b;
+      border-radius: 30px;
+      padding: 0 30px;
+      text-align: center;
+      box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+
+      &.focos {
+        background: #fff;
+        box-shadow: 0px 18px 50px -15px #060f28;
+        h4 {
+          color: $text-primary;
+        }
+
+        h3 {
+          color: $text-primary;
+
+          &::before {
+            background-color: #d3d9e9;
+          }
+        }
+
+        .cta {
+          @include button(
+            $secundary-color,
+            solid 1px $secundary-color,
+            15px 80px,
+            68px
+          );
+          &:hover {
+            @include button(transparent, solid 1px #2a407c, 15px 80px, 68px);
+            color: $primary-color;
+          }
+        }
+      }
+
+      h4 {
+        @include text-style($text-color, 30px, bold, 35px);
+        margin: 50px 0 10px 0;
+      }
+
+      span {
+        @include text-style($text-secondary, 18px, normal, 27px);
+        display: block;
+      }
+
+      h3 {
+        @include text-style($text-color, 60px, bold, 70px);
+        margin: 0;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 220px;
+          height: 1px;
+          background-color: #2a407c;
+          margin: 37px auto 28px auto;
+        }
+      }
+
+      .cta {
+        display: inline-block;
+        @include button(transparent, solid 1px #2a407c, 15px 80px, 68px);
+        text-decoration: none;
+        color: $text-color;
+        margin: 40px 0 0 0;
+
+        @include button(transparent, solid 1px #2a407c, 15px 80px, 68px);
+
+        &:hover {
+          @include button(
+            $secundary-color,
+            solid 1px $secundary-color,
+            15px 80px,
+            68px
+          );
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    padding: 63px 0 100px 0;
+    border-top: solid 1px #2a407c;
+    justify-content: space-between;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 36px;
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .menu-lista {
+      a {
+        text-decoration: none;
+        @include text-style($text-secondary, 14px, normal, 16px);
+        transition: all 0.2s ease-out;
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+//Responsividade
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-features {
+    .section-vatagens {
+      .vantagens-itens {
+        img {
+          max-width: 560px;
+        }
+      }
+    }
+  }
+  .pricing {
+    .plans-itens {
+      .item {
+        background: #fff;
+        box-shadow: 0px 18px 50px -15px #060f28;
+        h4 {
+          color: $text-primary;
+        }
+
+        h3 {
+          color: $text-primary;
+
+          &::before {
+            background-color: #d3d9e9;
+          }
+        }
+
+        .cta {
+          @include button(
+            $secundary-color,
+            solid 1px $secundary-color,
+            15px 80px,
+            68px
+          );
+          &:hover {
+            @include button(transparent, solid 1px #2a407c, 15px 80px, 68px);
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .bg-main {
+    padding-bottom: 320px;
+    .content-main {
+      flex-direction: column-reverse;
+      align-items: center;
+      .content-text {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+      .content-img {
+        max-width: 100%;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  /// Menu Mobile
+  .bg-main {
+    .header-main {
+      justify-content: space-between;
+      .mob {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .mob-in {
+          display: inline-block;
+          text-decoration: none;
+          @include text-style($text-secondary, 16px, normal, 19px);
+          transition: all 0.2s ease-out;
+          &:hover {
+            color: $text-color;
+          }
+        }
+        .icon-mobile {
+          display: block;
+          span {
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: $text-secondary;
+            margin: 10px;
+          }
+
+          &.ativo {
+            z-index: 10;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+          }
+        }
+      }
+
+      .navbar {
+        width: 100vw;
+        height: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: $neutral-color;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.2s ease-out;
+        .logo {
+          display: none;
+        }
+        .menu-lista {
+          display: none;
+        }
+        .menu-login {
+          display: none;
+        }
+
+        &.ativo {
+          height: 100vh;
+          padding: 50px 20px 20px 20px;
+
+          .logo {
+            display: block;
+          }
+          .menu-lista {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 50px 0;
+            gap: 30px;
+            li {
+              width: 100%;
+            }
+            a {
+              border: 1px solid #d3d9e9;
+              padding: 20px 20px;
+              width: 100%;
+              display: block;
+              border-radius: 20px;
+
+              &:hover {
+                border-color: $secundary-color;
+                color: $text-secondary;
+              }
+            }
+          }
+
+          .menu-login {
+            display: flex;
+            margin-top: 70px;
+
+            a {
+              &:hover {
+                color: $text-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .section-features {
+    .section-vatagens {
+      .vantagens-itens {
+        flex-direction: column;
+        text-align: center;
+        &:nth-child(2) {
+          flex-direction: column-reverse;
+        }
+        img {
+          max-width: 560px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing {
+    .plans-itens {
+      gap: 60px;
+    }
+    .footer {
+      .menu-lista {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .pricing {
+    .plans-itens {
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .section-features {
+    .main-features {
+      .box-container {
+        .box-item {
+          display: flex;
+          align-items: center;
+          gap: 29px;
+
+          .content {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+  .section-features {
+    .section-vatagens {
+      .vantagens-itens {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .pricing {
+    .plans-itens {
+      gap: 30px;
+    }
+  }
+}
